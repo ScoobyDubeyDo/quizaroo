@@ -1,0 +1,18 @@
+{
+	"bracketSpacing": true,
+	"arrowParens": "always",
+	"bracketSameLine": false,
+	"tabWidth": 4,
+	"useTabs": true,
+	"semi": true,
+	"printWidth": 80,
+	"importOrder": [
+		"^(^react$|@react|react|^recoil$)",
+		"^@mui/(.*)$",
+		"<THIRD_PARTY_MODULES>",
+		"^@/(.*)$",
+		"^[./]"
+	],
+	"importOrderGroupNamespaceSpecifiers": true,
+	"importOrderSortSpecifiers": true
+}
