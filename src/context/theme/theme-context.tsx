@@ -11,6 +11,13 @@ declare module "@mui/material/styles" {
 	}
 }
 
+declare module "@mui/material/Button" {
+	interface ButtonPropsColorOverrides {
+		quizColor: true;
+	}
+}
+
+const { palette } = createTheme();
 const theme = createTheme({
 	palette: {
 		primary: {
@@ -20,11 +27,9 @@ const theme = createTheme({
 		secondary: {
 			main: "#225a49",
 		},
-		quizColor: {
-			main: "#CCD4D7",
-			light: "F2F8FA",
-			contrastText: "#000",
-		},
+		quizColor: palette.augmentColor({
+			color: { main: "#cfd8dc" },
+		}),
 	},
 	typography: {
 		fontFamily: ["Raleway", "sans-serif"].join(","),
