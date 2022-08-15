@@ -11,12 +11,6 @@ declare module "@mui/material/styles" {
 	}
 }
 
-declare module "@mui/material/Button" {
-	interface ButtonPropsColorOverrides {
-		quizColor: true;
-	}
-}
-
 const theme = createTheme({
 	palette: {
 		primary: {
@@ -39,6 +33,11 @@ const theme = createTheme({
 		MuiButton: {
 			defaultProps: {
 				variant: "contained",
+			},
+			styleOverrides: {
+				root: {
+					textTransform: "capitalize",
+				},
 			},
 		},
 	},

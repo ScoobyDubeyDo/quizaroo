@@ -1,4 +1,4 @@
-import { LandingPage } from "./Pages";
+import { Home, LandingPage } from "./Pages";
 import { Route, Routes } from "react-router-dom";
 import { CssBaseline } from "@mui/material";
 function App() {
@@ -8,8 +8,8 @@ function App() {
 			<Routes>
 				{/* <Route path="*" element={<FourOFour />} /> */}
 				<Route path="/" element={<LandingPage />} />
-				{/* <Route path="home" element={<Home />} />
-				<Route path="products" element={<Products />} />
+				<Route path="home" element={<Home />} />
+				{/* 	<Route path="products" element={<Products />} />
 				<Route
 					path="products/type/:categoryId"
 					element={<Products />}

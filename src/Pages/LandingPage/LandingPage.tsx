@@ -6,7 +6,6 @@ export const LandingPage = () => {
 			maxWidth={false}
 			sx={({ palette }) => ({
 				bgcolor: palette.secondary.main,
-				minHeight: "100vh",
 			})}
 		>
 			<Stack
@@ -59,8 +58,10 @@ export const LandingPage = () => {
 					Are you ready to test your knowledge?
 				</Typography>
 				<Stack width="100%" spacing={1}>
-					<Button fullWidth>Yes? Log in!</Button>
-					<Button fullWidth variant="text">
+					<Button size="large" fullWidth>
+						Yes? Log in!
+					</Button>
+					<Button size="large" fullWidth variant="text">
 						New member
 					</Button>
 				</Stack>
