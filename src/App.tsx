@@ -1,4 +1,4 @@
-import { Home, LandingPage } from "./Pages";
+import { Home, LandingPage, QuizLanding } from "./Pages";
 import { Route, Routes } from "react-router-dom";
 import { CssBaseline } from "@mui/material";
 function App() {
@@ -9,13 +9,14 @@ function App() {
 				{/* <Route path="*" element={<FourOFour />} /> */}
 				<Route path="/" element={<LandingPage />} />
 				<Route path="home" element={<Home />} />
+				<Route path="quiz/:quizId" element={<QuizLanding />} />
+
 				{/* 	<Route path="products" element={<Products />} />
 				<Route
 					path="products/type/:categoryId"
 					element={<Products />}
 				/>
 
-				<Route path="products/:productId" element={<SingleProduct />} />
 				<Route element={<PrivateRoute switchPath={false} />}>
 					<Route path="sign-up" element={<Signup />} />
 					<Route path="sign-in" element={<Signin />} />

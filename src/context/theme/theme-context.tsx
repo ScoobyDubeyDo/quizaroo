@@ -33,6 +33,7 @@ const theme = createTheme({
 		MuiButton: {
 			defaultProps: {
 				variant: "contained",
+				size: "large",
 			},
 			styleOverrides: {
 				root: {

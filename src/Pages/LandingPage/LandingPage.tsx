@@ -58,10 +58,8 @@ export const LandingPage = () => {
 					Are you ready to test your knowledge?
 				</Typography>
 				<Stack width="100%" spacing={1}>
-					<Button size="large" fullWidth>
-						Yes? Log in!
-					</Button>
-					<Button size="large" fullWidth variant="text">
+					<Button fullWidth>Yes? Log in!</Button>
+					<Button fullWidth variant="text">
 						New member
 					</Button>
 				</Stack>
