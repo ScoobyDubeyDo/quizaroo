@@ -1,4 +1,11 @@
-import { Home, LandingPage, QuizLanding, Result } from "./Pages";
+import {
+	Home,
+	LandingPage,
+	QuizLanding,
+	Result,
+	SignIn,
+	SignUp,
+} from "./Pages";
 import { Route, Routes } from "react-router-dom";
 import { CssBaseline } from "@mui/material";
 function App() {
@@ -11,15 +18,14 @@ function App() {
 				<Route path="home" element={<Home />} />
 				<Route path="quiz/:quizId" element={<QuizLanding />} />
 				<Route path="results" element={<Result />} />
+				{/* <Route element={<PrivateRoute switchPath={false} />}> */}
+				<Route path="signup" element={<SignUp />} />
+				<Route path="signin" element={<SignIn />} />
+				{/* </Route> */}
 				{/* 	<Route
 					path="products/type/:categoryId"
 					element={<Products />}
 				/>
-
-				<Route element={<PrivateRoute switchPath={false} />}>
-					<Route path="sign-up" element={<Signup />} />
-					<Route path="sign-in" element={<Signin />} />
-				</Route>
 				<Route element={<PrivateRoute />}>
 					<Route path="wishlist" element={<Wishlist />} />
 					<Route path="profile" element={<UserProfile />} />
