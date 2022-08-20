@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button, Container, Stack, Typography } from "@mui/material";
 import welcomeImg from "../../asset/welcome.svg";
 
@@ -59,8 +60,15 @@ export const LandingPage = () => {
 					Are you ready to test your knowledge?
 				</Typography>
 				<Stack width="100%" spacing={1}>
-					<Button fullWidth>Yes? Log in!</Button>
-					<Button fullWidth variant="text">
+					<Button component={Link} to="/signin" fullWidth>
+						Yes? Log in!
+					</Button>
+					<Button
+						component={Link}
+						to="/signup"
+						fullWidth
+						variant="text"
+					>
 						New member
 					</Button>
 				</Stack>

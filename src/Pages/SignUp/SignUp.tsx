@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { VisibilityOffOutlined, VisibilityOutlined } from "@mui/icons-material";
 import {
 	Box,
@@ -94,6 +95,8 @@ export const SignUp = () => {
 					sx={{
 						textTransform: "unset",
 					}}
+					component={Link}
+					to="/signin"
 				>
 					I already have an account
 				</Button>

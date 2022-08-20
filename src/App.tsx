@@ -8,36 +8,24 @@ import {
 	SignIn,
 	SignUp,
 } from "./Pages";
+import { PrivateRoute } from "./components/PrivateRoute";
 
 function App() {
 	return (
 		<div className="App">
 			<CssBaseline />
 			<Routes>
-				{/* <Route path="*" element={<FourOFour />} /> */}
-				<Route path="/" element={<LandingPage />} />
-				<Route path="home" element={<Home />} />
-				<Route path="quiz/:quizId" element={<QuizLanding />} />
-				<Route path="results" element={<Result />} />
-				{/* <Route element={<PrivateRoute switchPath={false} />}> */}
-				<Route path="signup" element={<SignUp />} />
-				<Route path="signin" element={<SignIn />} />
-				{/* </Route> */}
-				{/* 	<Route
-					path="products/type/:categoryId"
-					element={<Products />}
-				/>
+				<Route element={<PrivateRoute switchPath={false} />}>
+					<Route path="/" element={<LandingPage />} />
+					<Route path="signup" element={<SignUp />} />
+					<Route path="signin" element={<SignIn />} />
+				</Route>
 				<Route element={<PrivateRoute />}>
-					<Route path="wishlist" element={<Wishlist />} />
-					<Route path="profile" element={<UserProfile />} />
-					<Route path="cart" element={<Cart />}>
-						<Route index element={<ItemDetails />} />
-						<Route
-							path="price-details"
-							element={<PriceDetails />}
-						/>
-					</Route> 
-				</Route>*/}
+					<Route path="home" element={<Home />} />
+					<Route path="quiz/:quizId" element={<QuizLanding />} />
+					<Route path="results" element={<Result />} />
+				</Route>
+				{/* <Route path="*" element={<FourOFour />} /> */}
 			</Routes>
 		</div>
 	);

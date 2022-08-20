@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import * as colors from "@mui/material/colors";
 import { PlayArrow } from "@mui/icons-material";
 import {
@@ -46,6 +47,8 @@ export const CategoryCard = ({
 					}}
 				>
 					<IconButton
+						component={Link}
+						to="/quiz/assas"
 						size="large"
 						sx={{
 							color: colors[bgColor][900],
