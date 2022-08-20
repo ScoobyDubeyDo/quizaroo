@@ -1,3 +1,5 @@
+import { Route, Routes } from "react-router-dom";
+import { CssBaseline } from "@mui/material";
 import {
 	Home,
 	LandingPage,
@@ -6,8 +8,7 @@ import {
 	SignIn,
 	SignUp,
 } from "./Pages";
-import { Route, Routes } from "react-router-dom";
-import { CssBaseline } from "@mui/material";
+
 function App() {
 	return (
 		<div className="App">

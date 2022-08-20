@@ -1,6 +1,7 @@
-import { Container, Paper, Grid, Typography, Stack } from "@mui/material";
+import { Container, Grid, Paper, Stack, Typography } from "@mui/material";
 import waving from "../../asset/waving.svg";
 import { CategoryCard } from "./components";
+
 export const Home = () => {
 	return (
 		<Container

@@ -7,6 +7,7 @@ import {
 	Typography,
 } from "@mui/material";
 import trophy from "../../asset/trophy.svg";
+
 export const Result = () => {
 	return (
 		<Container

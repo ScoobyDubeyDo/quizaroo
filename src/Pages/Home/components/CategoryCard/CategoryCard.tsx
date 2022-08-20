@@ -1,3 +1,4 @@
+import * as colors from "@mui/material/colors";
 import { PlayArrow } from "@mui/icons-material";
 import {
 	Box,
@@ -7,7 +8,6 @@ import {
 	IconButton,
 	Typography,
 } from "@mui/material";
-import * as colors from "@mui/material/colors";
 
 type Props = {
 	imgUrl: string;

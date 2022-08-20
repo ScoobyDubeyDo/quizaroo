@@ -1,5 +1,5 @@
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { ReactNode } from "react";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 declare module "@mui/material/styles" {
 	interface Palette {

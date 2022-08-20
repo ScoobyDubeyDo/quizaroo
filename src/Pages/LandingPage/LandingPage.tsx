@@ -1,5 +1,6 @@
 import { Button, Container, Stack, Typography } from "@mui/material";
 import welcomeImg from "../../asset/welcome.svg";
+
 export const LandingPage = () => {
 	return (
 		<Container
