@@ -16,7 +16,6 @@ declare module "@mui/material/Button" {
 		quizColor: true;
 	}
 }
-console.log("sas");
 
 const { palette } = createTheme();
 const theme = createTheme({
